@@ -26,6 +26,8 @@ public class StudentInfoDO implements Serializable {
 	private String examId;
 	//所属班级
 	private Integer classId;
+	//班级名
+	private String className;
 	//学生姓名
 	private String studentName;
 	//身份证号
@@ -48,10 +50,16 @@ public class StudentInfoDO implements Serializable {
 	private Integer subjectType;
 	//所属学院
 	private Integer tocollege;
+	//学院名
+	private String collegeName;
 	//隶属校区*****
 	private Integer tocampus;
+	//校区名
+	private String campusName;
 	//所属专业
 	private Integer tomajor;
+	//专业名
+	private String majorName;
 	//生源地
 	private String birthplace;
 	//隶属层次
@@ -71,6 +79,9 @@ public class StudentInfoDO implements Serializable {
 	private Date editTime;
 	//修改人
 	private Integer editUserid;
+
+	//修改人姓名
+	private String userName;
 
 	/**
 	 * 设置：主键
@@ -383,6 +394,46 @@ public class StudentInfoDO implements Serializable {
 	 */
 	public Integer getEditUserid() {
 		return editUserid;
+	}
+
+	public String getClassName() {
+		return className;
+	}
+
+	public void setClassName(String className) {
+		this.className = className;
+	}
+
+	public String getCollegeName() {
+		return collegeName;
+	}
+
+	public void setCollegeName(String collegeName) {
+		this.collegeName = collegeName;
+	}
+
+	public String getCampusName() {
+		return campusName;
+	}
+
+	public void setCampusName(String campusName) {
+		this.campusName = campusName;
+	}
+
+	public String getMajorName() {
+		return majorName;
+	}
+
+	public void setMajorName(String majorName) {
+		this.majorName = majorName;
+	}
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 
 	@Override
