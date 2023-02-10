@@ -216,7 +216,7 @@
             <if test="note != null and note != ''"> `note` = #{note} ,</if>
             <if test="addTime != null"> `add_time` = #{addTime}, </if>
             <if test="addUserid != null and addUserid != ''"> `add_userid` = #{addUserid}, </if>
-            <if test="editTime != null"> `edit_time` = DATE_FORMAT(NOW(),'%Y-%m-%d %H:%i:%s') ,</if>
+            `edit_time` = DATE_FORMAT(NOW(),'%Y-%m-%d %H:%i:%s') ,
             <if test="editUserid != null and editUserid != ''"> `edit_userid` = #{editUserid} </if>
         </set>
         where id = #{id}
