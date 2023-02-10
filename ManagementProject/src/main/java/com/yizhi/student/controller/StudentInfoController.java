@@ -45,6 +45,7 @@ public class StudentInfoController {
 	@PostMapping("/save")
 	@RequiresPermissions("student:studentInfo:add")
 	public R save(StudentInfoDO studentInfoDO){
+
 		if(studentInfoService.save(studentInfoDO)>0){
 			return R.ok();
 		}

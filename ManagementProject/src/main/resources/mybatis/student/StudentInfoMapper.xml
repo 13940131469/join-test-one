@@ -185,7 +185,7 @@
                 #{note},
                 DATE_FORMAT(NOW(),'%Y-%m-%d %H:%i:%s')  ,
                 #{addUserid},
-                #{editTime},
+                DATE_FORMAT(NOW(),'%Y-%m-%d %H:%i:%s'),
                 #{editUserid}
             )
     </insert>
